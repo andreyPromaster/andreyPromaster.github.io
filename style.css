@@ -1,0 +1,313 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+/* Scrollbars */
+
+section ::-webkit-scrollbar {
+  width: 4px;
+}
+
+section ::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}
+
+section ::-webkit-scrollbar-thumb {
+  background: #f2f2f2;
+}
+
+section ::-webkit-scrollbar-thumb:hover {
+  background: #a9dcff;
+}
+
+.right-side ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.right-side ::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}
+
+.right-side ::-webkit-scrollbar-thumb {
+  background: rgba(137, 160, 179, 0.5);
+}
+
+.right-side ::-webkit-scrollbar-thumb:hover {
+  background: rgba(137, 160, 179, 0.5);
+}
+
+/*Page Sections*/
+
+main {
+  display: flex;
+}
+
+section {
+  width: 27vw;
+}
+
+.right-side {
+  width: 100%;
+}
+
+main .right-side {
+  padding-right: 1vw;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  background-color: #5682a3;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-elem {
+  color: #b0c0cc;
+  padding: 16px 20px;
+  cursor: pointer;
+}
+
+.header-elem.left-side {
+  width: 28vw;
+}
+
+.header-elem:hover {
+  color: white;
+  background-color: #256596;
+  padding: 16px 20px;
+}
+
+.header-elem img {
+  height: 18px;
+  margin-bottom: -4px;
+  margin-left: 40px;
+}
+
+.header-elem span:first-child {
+  color: white;
+  font-weight: bold;
+  margin-right: 7px;
+}
+
+/*Aside Section*/
+
+.search-wrap {
+  padding: 14px;
+  overflow-y: scroll;
+}
+.search {
+  background-color: #f2f2f2;
+  padding: 6px;
+  color: #b0c0cc;
+  border-radius: 4px;
+}
+
+.search input {
+  color: black;
+  background-color: #f2f2f2;
+  border: none;
+  margin-left: 4px;
+  outline: none;
+  width: 70%;
+}
+
+.dialog-list {
+  overflow-y: scroll;
+  height: calc(100vh - 123px);
+}
+
+.dialog {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+
+.dialog span {
+  color: #a6a6a6;
+}
+
+.dialog:hover {
+  background-color: #e4f0f8;
+}
+.dialog p {
+  font-weight: bold;
+  margin: 8px 0px;
+}
+
+.dialog img {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  padding: 8px 18px;
+}
+
+.dialog.chosen {
+  background-color: #5682a3;
+  color: white;
+}
+
+.dialog.chosen span {
+  color: white;
+}
+
+.dialog.chosen p {
+  color: white;
+}
+
+.dialog .time {
+  position: absolute;
+  font-size: 11px;
+  right: 0.8vw;
+  top: 6px;
+}
+.dialog .ammount-input-msg {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  right: 0.8vw;
+  min-width: 20px;
+  min-height:20px;
+  display: inline-block;
+  color: rgb(255, 255, 255)!important;
+  background: rgb(100, 194, 112);
+}
+
+.dialog .msg-passive-notification-color{
+  background: rgb(191, 191, 191);
+}
+
+.dialog .msg-notification {
+  position: absolute;
+  right: 2px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  padding: 0%;   
+  top: 22px; 
+}
+
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  height: calc(100vh - 160px);
+}
+
+.message {
+  width: 57vw;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  padding: 5px 10vw;
+}
+
+.message:hover {
+  background-color: #e4f0f8;
+}
+
+.message p {
+  font-weight: bold;
+  color: #3d6f9b;
+  margin: 6px 0px;
+}
+
+.message p:hover {
+  text-decoration: underline;
+}
+
+.message > img {
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  padding: 8px 18px;
+}
+
+.attached {
+  width: 20vw;
+}
+
+.message .time {
+  position: absolute;
+  font-size: 11px;
+  right: 5vw;
+  color: #a6a6a6;
+  top: 6px;
+}
+
+.message .time:hover {
+  text-decoration: underline;
+}
+
+.message-list > p {
+  color: #999999;
+}
+
+.message-input {
+  display: flex;
+  padding: 5px 10vw;
+  color: #b5b5b5;
+  flex-wrap: nowrap;
+}
+.message-input img {
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  padding: 8px 18px;
+}
+
+.message-input input {
+  color: black;
+  background-color: white;
+  border: none;
+  font-size: 13px;
+  margin-left: 4px;
+  outline: none;
+  width: 40vw;
+  height: 52px;
+}
+
+
+
+.input-wrap {
+  border-bottom: #a6a6a6 solid 1px;
+}
+
+.sub-input {
+  margin-top: 6px;
+  display: flex;
+  font-size: 18px;
+  justify-content: flex-start;
+}
+
+.sub-input i {
+  margin: 1px 10px;
+  cursor: pointer;
+}
+
+.message-input i:hover {
+  color: rgb(133, 133, 133);
+}
+
+.emoji {
+  margin: 0px 2px;
+  cursor: pointer;
+}
+
+.emoji:hover {
+  background-color: #e4f0f8;
+}
+
+audio {
+  outline: none;
+}
